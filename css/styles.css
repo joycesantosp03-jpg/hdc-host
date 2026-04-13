@@ -1,0 +1,437 @@
+
+*{
+    margin:  0; 
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;}
+
+    h1,h2,h3{
+        color: #333;
+    }
+
+    p{
+        color: #70747a;
+
+    }
+    .navbar-container {
+     /* ocupa toda largura */
+     width: 100%;
+    /* altura fixa */
+    height: 80px;
+    /* fundo escuro */
+    background-color: #232a31;
+    /* espaço interno lateral, 2 rem = unidade relativa ao tamanho da fonte */
+    padding: 0 2rem;}
+
+    /*position: relative para que elementos dentro dele com position: absolute se posicionem baseados nele.  */
+      nav{
+        position: relative;}
+    
+    .logo{
+    
+    /* define largura da imagem */
+        width: 50px;
+    /* empurra ela um pouco para baixo */
+        margin-top: 15px;
+    }
+
+    .navbar-items{
+        /* faz esse elemento sair do fluxo normal e se posicionar
+        referente ao pai que tem relative */
+        position:absolute ;
+
+        /* coloca ele do lado direito */
+        right: 0;
+
+        /* altura fixa */
+        height: 80px;
+
+       /* centraliza verticalmente o texto dentro 
+       da altura de 80 px */
+        line-height: 80px;
+        margin: 0;
+        display: inline-block;
+
+    }
+    .navbar-items li {
+     /* coloca os itens lado a lado */
+        display: inline-block;
+
+    /* tudo maiusculo */
+        text-transform: uppercase;
+
+    /* espaço entre os links */
+        margin-left: 25px;
+    }
+
+    .navbar-items a {
+     /* cor branca */
+        color: #fff;
+
+    /* remove sublinhado */
+      text-decoration: none;
+
+    /* cria animação  */
+        transition: 0.5s;
+    }
+
+    /* quando passa o mouse muda de cor */
+    .navbar-items a:hover {
+        color:#ccc;
+    }
+
+    /* botao de entrar */
+    .default-btn {
+        /* espaçamento interno */
+        padding: 15px 20px;
+        /* fundo verde */
+        background-color: #2cc76a;
+        /* cantos arredondados */
+        border-radius: 5px
+    }
+    
+   .default-btn:hover{
+    background-color: #22bb5f;
+    color: #fff;}
+   
+    /* main banner */
+    .main-banner{
+        /* coloca img de fundo */
+        background-image: url("../img/mainbanner.png") ;
+        /* diz que a img vai cobrir, toda img de fundo */
+        background-size: cover;
+        /* centraliza a img no meio da div */
+        background-position: center;
+        /* deixa o banner alto */
+        padding: 10rem 0;}
+
+  .main-banner h1,
+  .main-banner p {
+    /* texto branco */
+    color: #fff;
+    /* centraliza o texto horizontal */
+    text-align: center;
+    /* deixa o texto grosso */
+    font-weight: bold;
+    /* cria sombras no texto */
+    text-shadow: #000 3px 2px 3px;
+  }
+
+  .main-banner h1{
+    /* define tamanho para o titulo principal */
+    font-size: 54px;}
+
+/* define tamanho menor que o h1 , para ter hierarquia visual */
+.main-banner p{ font-size: 32px;}
+
+/* services */
+.services-container{
+    padding: 5rem 0;
+}
+
+.services-container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-container li {
+    /* comportamento automatico,
+    onde se sobrar espaço cresce,
+     e se faltar espaço encolhe */
+    flex: 1 1 200px;
+    /* remove as marcações da lista */
+    list-style: none;
+    /* Centraliz o texto denteo do elemento */
+    text-align: center;
+    /*  espaçamento interno */
+    padding: 20px;
+}
+
+.fas{
+    /* icones tamanho maior */
+    font-size: 60px;
+    /* cria espaço embaixo dos icones */
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt{
+/* muda a cor do escudo */
+    color: #2cc76a ;
+}
+.fa-rocket{
+    /* muda a cor do foguete */
+    color: #ef3f29 ;
+}
+
+.fa-comments{
+    /* muda a cor do comentario */
+    color: #ef8f29 ;
+}
+
+.services-container h3{
+ /* adiciona espaço embaixo */
+    margin-bottom: 25px;
+}
+
+
+.services-container p{
+/* controla o espaço entre linhas do texto */
+    line-height: 24px;
+}
+ /* prices and plans */
+.pricing-container{
+ /* Cria um espaço na parte de baixo
+    afasta o conteudo na borda inferior */
+padding-bottom: 5rem;
+/* Centraliza textos e elementos inline dentro dessa div */
+text-align: center;
+}
+
+.pricing-container h2{
+    font-size: 36px;
+    /* tamanho da fonte */
+}
+.pricing-container p{
+    font-size: 20px;
+    /* tamanho fonte */
+}
+.plans-container{
+    /* elementos lado a lado */
+    display:flex;
+    /* espaço ente elementos, */
+    justify-content: space-between;
+    /* a largura ocupa 90% do elemento pai */
+    width: 90%;
+    /* 50px margem superior, auto centraliza horizontal
+    0 margin inferior */
+    margin: 50px auto 0;
+
+}
+.plan {
+    /* todos planos crescem igual */
+    flex: 1;
+    /* limita o tamanho maximo */
+    max-width: 275px;
+    /* espaço lateral entre os planos */
+    margin: 0 20px;
+    
+}
+
+.plan ul{
+    padding: 0;
+    /* remove espaçamento padrao da lista */
+
+}
+
+.plan li{
+list-style: none;
+/* remove as bolinhas da lista */
+height: 50px;
+/* altura fixa */
+line-height: 50px;
+/* centraliza o texto vertical, pq iguala
+a altura) */
+background-color: #e8e9ea;
+/* cor de fundo */
+color:#333;}
+/* cor do texto */
+
+.plan .price{
+/* aqui tem 2 classes ao mesmo tempo */
+
+    width: 120px;
+    /*  Define largura horizontal */
+    height: 120px;
+    /* define altura vertical*/
+    border-radius: 50%;
+    /* arredonda as bordas  */
+    background-color:#2cc762 ;
+    /* cor de fundo */
+    color: #fff;
+    /* cor do texto */
+    text-align: center;
+    /* centraliza na horizontal */
+    line-height: 120px;
+    /* centraliza vertical, igual altura */
+    margin: 0 auto -50px;
+    /* 0 no topo, auto=centraliza horizontal, -50 px= margin negativa
+    em baixo, faz ele subir e sobrepor o card */
+    font-size: 18px;
+    /* tamanho da fonte */
+    position: relative;
+    /* move o elemento usando top/left */
+}
+/* Um elemento com classe plan-name que está dentro
+ de um elemento com classe plan. */
+.plan .plan-name{
+    text-transform: uppercase;
+    /* texto maiusculo */
+    font-size: 20px;
+    /* tamanho da fonte */
+    font-weight: bold;
+    /* texto em negrito */
+    color: #fff;
+    /* cor do texto */
+    background-color: #202b34;
+    /*cor de fundo */
+    padding: 50px 0;
+    /* espaço cima e baixo, e nada nas laterais */
+}
+
+.plan .plan-btn{
+    background-color: #2cc762;
+    /* cor de fundo */
+    color: #fff;
+    /* cor da letra */
+    font-size: 24px;
+    /* tamanho da letra */
+    height: 75px;
+    /* altura fixa */
+    line-height: 75px;
+    /* centraliza o texto vertical  */
+    cursor: pointer;
+    /* quando passa o mouse encima, vira
+    uma maozinha, significa que o botão e clicavel */
+}
+
+.plan .recommended{
+    background-color: #f45c55;
+}
+
+/* search domain */
+    .searchdomain-container{
+      background-color: #34454e;
+      /* centraliza apenas o texto ,
+       mas a seção ainda ocupa a tela inteira */
+      text-align: center;
+      padding: 5rem 0;
+    }
+ 
+    .searchdomain-container h2{
+        color: #fff;
+         font-size: 42px;
+         margin-bottom: 15px;
+    }
+
+    .searchdomain-container p{
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;}
+
+    .searchdomain-container input{
+        display: block;
+        border: none;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+
+    .searchdomain-container input[type="text"]{
+        width: 60%;
+        padding: 20px;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .searchdomain-container input[type="submit"]{
+        background-color: #2cc76a;
+        padding: 15px 30px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        opacity: .9;
+    }
+
+     .searchdomain-container input[type="submit"]:hover{
+         opacity: 1;
+    }
+
+    /* contact form */
+    .contact-container{
+    text-align: center;
+    /* espaço interno na seguinte ordem,
+    top,right,bottom,left. topo,direita,baixo,esquerda */
+    padding: 5rem 0 2rem 0;
+    }
+     .contact-container h2{
+        font-size: 36px;
+        margin-bottom: 15px;
+     }
+     
+     .contact-container p{
+        font-size: 20px;
+        margin-bottom: 40px;
+     }
+
+     .contact-container input,
+     .contact-container textarea{
+        width: 200px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin: 0 10px 20px;
+     }
+
+     .contact-container textarea{
+        display: block;
+        margin: 0 auto 20px;
+        width: 470px;
+        height: 150px;
+     }
+     
+     .contact-container input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        background-color: #2cc76a;
+        color: #fff;
+        cursor: pointer;
+     }
+
+     /* footer */
+    footer{
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 0 100px;
+    }
+
+    /* responsividade do projeto */
+
+    /* small laptops a partir de 1100px */
+    @media(max-width:1100px){
+    .plans-container{
+        width: 95%;
+    }
+    .plan{
+        margin: 0 5px;
+    }}
+
+    /* tablet 900px*/
+    @media(max-width:900px){
+      .main-banner p{
+        font-size: 32px;
+        padding: 0 6rem} 
+      .searchdomain-container {
+        padding: 2rem 4rem;
+      }
+    }
+    /* celular */
+    @media(max-width: 576px){
+        .plans-container{
+            flex-direction: column;
+        }
+        .plan{
+        width: 100%;
+        max-width: 100%;
+        }
+        nav{
+            font-size: 13px;
+        }
+
+        .main-banner p{
+        font-size: 25px ;
+        }
+    }
+
+
+
