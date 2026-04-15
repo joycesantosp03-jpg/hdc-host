@@ -1,6 +1,5 @@
-## 🌐 Acesse o projeto
-
-🔗 [Ver projeto online](https://joycesantosp03-jpg.github.io/hdc-host/)## 
+🌐 Acesse o projeto
+🔗 [Ver projeto online](https://joycesantosp03-jpg.github.io/hdc-host/)
 
 📌 Sobre o projeto
 
