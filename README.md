@@ -1,4 +1,8 @@
-## 📌 Sobre o projeto
+## 🌐 Acesse o projeto
+
+🔗 [Ver projeto online](https://joycesantosp03-jpg.github.io/hdc-host/)## 
+
+📌 Sobre o projeto
 
 O **HDC Host** é um website institucional desenvolvido por mim, para simular uma plataforma de serviços de hospedagem de sites, com foco na apresentação de planos, recursos e captação de clientes.
 
