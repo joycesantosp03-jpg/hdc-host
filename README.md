@@ -1,6 +1,6 @@
 ## 📌 Sobre o projeto
 
-O **HDC Host** é um website institucional desenvolvido para simular uma plataforma de serviços de hospedagem de sites, com foco na apresentação de planos, recursos e captação de clientes.
+O **HDC Host** é um website institucional desenvolvido por mim, para simular uma plataforma de serviços de hospedagem de sites, com foco na apresentação de planos, recursos e captação de clientes.
 
 O projeto apresenta uma interface moderna e organizada, incluindo seções como banner principal, serviços oferecidos, planos e preços, busca de domínio e formulário de contato, proporcionando uma experiência intuitiva ao usuário.
 
